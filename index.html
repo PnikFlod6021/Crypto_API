@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href = "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel = "stylesheet">
+    <link rel = "stylesheet" href = "https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src='https://coinconvert.net/assets/js/crypto-convert.min.js'></script>
+</head>
+<body>
+    <header>
+    <div class = "wrapper">
+        <ul class = "coinWrapper">
+        <li><a href = "bitcoin.html">BTC: </a><span id = "bitcoin"></span> USD<span id = "btc">  </span> %</li>
+        <p>----</p>
+        <li><a href = "#">ETH: </a> <span id = "ethereum"></span> USD <span id = "eth"> </span> %</li>
+        <p>----</p>
+        <li><a href = "#">SOL: </a> <span id = "solana"></span> USD <span id = "sol">  </span> %</li>
+        <script src = "index.js"></script>
+        </ul>
+    </div>
+</header>
+
+
+
+<div class = "calcWrapper">
+    <h1 class = "converterTitle"><i class="ri-exchange-dollar-line"></i><span></span></h1>
+    <div class="calculator">
+        <div class = "inputBox">
+        <input type="number" name="usd" id ="currencyBTCField" placeholder="USD">
+    </div>
+        <p>-----</p>
+        
+        <input type="number" name="btc" id ="currencyBTCResult" placeholder="BTC">
+        <p>-----</p>
+        <button type = "button" id = "btcButton" onclick = "getValue()">Submit</button>
+    </div>
+    <div class="calculator">
+        <input type="number" name="usd" id ="currencyField" placeholder="USD">
+        <p>-----</p>
+        <input type="number" name="btc" id ="currencyEthResult" placeholder="ETH">
+        <p>-----</p>
+        <button type = "button" id = "btcButton"onclick = "getEthValue()">Submit</button>
+
+    </div>
+
+    <div class="calculator">
+        <input type="number" name="usd" id ="currencyField" placeholder="USD">
+        <p>-----</p>
+        <input type="number" name="btc" id ="currencySolResult" placeholder="SOL">
+        <p>-----</p>
+        <button type = "button" id = "btcButton" onclick = "getSolValue()">Submit</button>
+    </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
